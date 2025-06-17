@@ -71,7 +71,7 @@ html, body {
 <!-- Navigation -->
 <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
 <div class="container mx-auto px-4 py-3 flex items-center justify-between">
-<a href="#" class="text-3xl font-['Pacifico'] text-primary">logo</a>
+<a href="#" class="text-3xl font-['Pacifico'] text-primary">Peeru Decor Line</a>
 <div class="hidden md:flex items-center space-x-8">
 <a href="#" class="nav-link active text-gray-800 hover:text-primary transition-colors">Home</a>
 <a href="#services" class="nav-link text-gray-800 hover:text-primary transition-colors">Services</a>
@@ -273,7 +273,7 @@ Learn More
 <div class="container mx-auto px-4">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 <div>
-<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Why Choose Peeru Signages?</h2>
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Why Choose Peeru Decor Line?</h2>
 <p class="text-lg text-gray-600 mb-8">With over 15 years of experience, we provide end-to-end signage and interior branding solutions that transform your space and elevate your brand presence.</p>
 <div class="space-y-6">
 <div class="flex">
@@ -553,8 +553,8 @@ View All Projects
 <i class="ri-user-3-line text-gray-500"></i>
 </div>
 <div>
-<h4 class="font-semibold text-gray-900">Robert Anderson</h4>
-<p class="text-sm text-gray-500">CEO, Luxe Retail Group</p>
+<h4 class="font-semibold text-gray-900"></h4>
+<p class="text-sm text-gray-500"></p>
 </div>
 </div>
 </div>
@@ -575,8 +575,8 @@ View All Projects
 <i class="ri-user-3-line text-gray-500"></i>
 </div>
 <div>
-<h4 class="font-semibold text-gray-900">Jennifer Mitchell</h4>
-<p class="text-sm text-gray-500">Operations Director, TechSphere</p>
+<h4 class="font-semibold text-gray-900"></h4>
+<p class="text-sm text-gray-500"></p>
 </div>
 </div>
 </div>
@@ -597,8 +597,8 @@ View All Projects
 <i class="ri-user-3-line text-gray-500"></i>
 </div>
 <div>
-<h4 class="font-semibold text-gray-900">Michael Reynolds</h4>
-<p class="text-sm text-gray-500">Property Manager, Grand Plaza Hotel</p>
+<h4 class="font-semibold text-gray-900 mb-1"></h4>
+<p class="text-sm text-gray-500"></p>
 </div>
 </div>
 </div>
@@ -634,89 +634,45 @@ Get a Free Quote
       </button>
     </div>
     
-    <form id="quote-form" class="p-6">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-        <div>
-          <label for="quote-name" class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
-          <input type="text" id="quote-name" required class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary text-gray-800" placeholder="John Smith">
-        </div>
-        <div>
-          <label for="quote-email" class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
-          <input type="email" id="quote-email" required class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary text-gray-800" placeholder="john@example.com">
-        </div>
-      </div>
-      
-      <div class="mb-6">
-        <label for="quote-phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
-        <input type="tel" id="quote-phone" required class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary text-gray-800" placeholder="+1 (555) 123-4567">
-      </div>
-      
-      <div class="mb-6">
-        <label for="quote-type" class="block text-sm font-medium text-gray-700 mb-2">Project Type *</label>
-        <div class="relative">
-          <select id="quote-type" required class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary text-gray-800 appearance-none pr-8">
-            <option value="" selected disabled>Select project type</option>
-            <option value="exteriors">Exteriors</option>
-            <option value="interiors">Interiors</option>
-            <option value="signages">Signages</option>
-            <option value="multiple">Multiple Services</option>
-          </select>
-          <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-            <i class="ri-arrow-down-s-line text-gray-400"></i>
-          </div>
-        </div>
-      </div>
-      
-      <div class="mb-6">
-        <label for="quote-budget" class="block text-sm font-medium text-gray-700 mb-2">Budget Range *</label>
-        <div class="relative">
-          <select id="quote-budget" required class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary text-gray-800 appearance-none pr-8">
-            <option value="" selected disabled>Select budget range</option>
-            <option value="below-5k">Below $5,000</option>
-            <option value="5k-10k">$5,000 - $10,000</option>
-            <option value="10k-25k">$10,000 - $25,000</option>
-            <option value="25k-50k">$25,000 - $50,000</option>
-            <option value="above-50k">Above $50,000</option>
-          </select>
-          <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-            <i class="ri-arrow-down-s-line text-gray-400"></i>
-          </div>
-        </div>
-      </div>
-      
-      <div class="mb-6">
-        <label for="quote-timeline" class="block text-sm font-medium text-gray-700 mb-2">Expected Timeline *</label>
-        <div class="relative">
-          <select id="quote-timeline" required class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary text-gray-800 appearance-none pr-8">
-            <option value="" selected disabled>Select timeline</option>
-            <option value="immediate">Immediate (within 1 month)</option>
-            <option value="1-3-months">1-3 months</option>
-            <option value="3-6-months">3-6 months</option>
-            <option value="6-plus-months">6+ months</option>
-          </select>
-          <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-            <i class="ri-arrow-down-s-line text-gray-400"></i>
-          </div>
-        </div>
-      </div>
-      
-      <div class="mb-6">
-        <label for="quote-description" class="block text-sm font-medium text-gray-700 mb-2">Project Description *</label>
-        <textarea id="quote-description" required rows="4" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary text-gray-800" placeholder="Please describe your project requirements..."></textarea>
-      </div>
-
-      <div class="flex justify-end space-x-4">
-        <button type="button" id="cancel-quote" class="px-6 py-3 border border-gray-300 text-gray-700 !rounded-button font-medium hover:bg-gray-50 transition-colors whitespace-nowrap">
-          Cancel
-        </button>
-        <button type="submit" class="bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-blue-700 transition-colors whitespace-nowrap">
-          Submit Quote Request
-        </button>
-      </div>
-    </form>
+    <!-- Replace your current quote form inside the modal with this improved version -->
+<form id="quoteForm" class="space-y-4 mt-4">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div>
+      <label for="quote-name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+      <input id="quote-name" name="name" type="text" required class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary text-gray-800" placeholder="Your Name">
+    </div>
+    <div>
+      <label for="quote-email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+      <input id="quote-email" name="email" type="email" required class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary text-gray-800" placeholder="you@example.com">
+    </div>
+    <div>
+      <label for="quote-phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+      <input id="quote-phone" name="phone" type="tel" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary text-gray-800" placeholder="+1 (555) 123-4567">
+    </div>
+    <div>
+      <label for="quote-type" class="block text-sm font-medium text-gray-700 mb-1">Project Type</label>
+      <input id="quote-type" name="projectType" type="text" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary text-gray-800" placeholder="e.g. Signage, Interior">
+    </div>
+    <div>
+      <label for="quote-budget" class="block text-sm font-medium text-gray-700 mb-1">Budget</label>
+      <input id="quote-budget" name="budget" type="text" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary text-gray-800" placeholder="Your Budget">
+    </div>
+    <div>
+      <label for="quote-timeline" class="block text-sm font-medium text-gray-700 mb-1">Timeline</label>
+      <input id="quote-timeline" name="timeline" type="text" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary text-gray-800" placeholder="e.g. 2 weeks">
+    </div>
+  </div>
+  <div>
+    <label for="quote-description" class="block text-sm font-medium text-gray-700 mb-1">Project Description</label>
+    <textarea id="quote-description" name="description" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary text-gray-800" placeholder="Describe your project..."></textarea>
+  </div>
+  <button type="submit" class="w-full bg-primary text-white px-6 py-3 rounded font-medium hover:bg-blue-700 transition-colors">
+    Submit Request
+  </button>
+</form>
   </div>
 </div>
-<a href="https://readdy.ai/home/7e43d49a-cc59-4c35-a7eb-a1315a98e341/48ad5af1-8d81-446d-ad86-8d11b9cea5a6" data-readdy="true" class="bg-transparent border-2 border-white text-white px-8 py-3 !rounded-button font-medium hover:bg-white hover:bg-opacity-10 transition-colors whitespace-nowrap inline-block">
+<a href="" data-readdy="true" class="bg-transparent border-2 border-white text-white px-8 py-3 !rounded-button font-medium hover:bg-white hover:bg-opacity-10 transition-colors whitespace-nowrap inline-block">
 View Our Portfolio
 </a>
 </div>
@@ -773,7 +729,7 @@ Send Message
 </div>
 <div>
 <div class="bg-white rounded-lg shadow-md overflow-hidden h-80 mb-8">
-<div style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png'); background-size: cover; background-position: center;" class="w-full h-full"></div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4612.559537762647!2d78.50439368628771!3d13.554918544715996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb267e71bfbf0f3%3A0xab7383ef0d3556a3!2sPeeru%20Signages!5e0!3m2!1sen!2sin!4v1750194111033!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 <div class="bg-white rounded-lg shadow-md p-8">
 <h3 class="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
@@ -784,7 +740,7 @@ Send Message
 </div>
 <div>
 <h4 class="font-semibold text-gray-900 mb-1">Our Location</h4>
-<p class="text-gray-600">123 Business Avenue, Suite 500<br>New York, NY 10001</p>
+<p class="text-gray-600">Pyara Nagar, Madanapalle (517325), Annamayya Dist, Andhra Pradesh.<br>India</p>
 </div>
 </div>
 <div class="flex">
@@ -793,8 +749,7 @@ Send Message
 </div>
 <div>
 <h4 class="font-semibold text-gray-900 mb-1">Phone Number</h4>
-<p class="text-gray-600">+1 (555) 987-6543</p>
-<p class="text-gray-600">+1 (555) 123-4567</p>
+<p class="text-gray-600">+91 9502 541 555</p>
 </div>
 </div>
 <div class="flex">
@@ -813,8 +768,8 @@ Send Message
 </div>
 <div>
 <h4 class="font-semibold text-gray-900 mb-1">Business Hours</h4>
-<p class="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
-<p class="text-gray-600">Saturday: 10:00 AM - 4:00 PM</p>
+<p class="text-gray-600">Monday - Saturday: 9:00 AM - 10:00 PM</p>
+<p class="text-gray-600">Sunday: 09:00 AM - 3:00 PM</p>
 </div>
 </div>
 </div>
@@ -828,7 +783,7 @@ Send Message
 <div class="container mx-auto px-4">
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
 <div>
-<a href="#" class="text-3xl font-['Pacifico'] text-white mb-6 inline-block">logo</a>
+<a href="#" class="text-3xl font-['Pacifico'] text-white mb-6 inline-block">Peeru Decor Line</a>
 <p class="text-gray-400 mb-6">Providing premium signage and interior branding solutions since 2010. We transform spaces and elevate brands with our expert craftsmanship and end-to-end service.</p>
 <div class="flex space-x-4">
 <a href="#" class="w-10 h-10 bg-gray-800 !rounded-full flex items-center justify-center hover:bg-primary transition-colors">
@@ -892,7 +847,7 @@ Subscribe
 </div>
 <div class="border-t border-gray-800 pt-8">
 <div class="flex flex-col md:flex-row justify-between items-center">
-<p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Peeru Signages. All rights reserved.</p>
+<p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Peeru Decor Line. All rights reserved.</p>
 <div class="flex space-x-6">
 <a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Privacy Policy</a>
 <a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Terms of Service</a>
@@ -1126,6 +1081,88 @@ document.addEventListener('DOMContentLoaded', function () {
 
     counters.forEach(counter => observer.observe(counter));
   }
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('quoteForm');
+  const modal = document.getElementById('quote-modal');
+  function closeModalHandler() {
+    modal.classList.add('hidden');
+    document.body.style.overflow = '';
+    form.reset();
+  }
+
+  if (!form) return;
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const formData = {
+      name: document.getElementById('quote-name').value,
+      email: document.getElementById('quote-email').value,
+      phone: document.getElementById('quote-phone').value,
+      projectType: document.getElementById('quote-type').value,
+      budget: document.getElementById('quote-budget').value,
+      timeline: document.getElementById('quote-timeline').value,
+      description: document.getElementById('quote-description').value
+    };
+
+    fetch('http://localhost:5000/api/quotes', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData)
+    })
+    .then(res => res.json())
+    .then(data => {
+      // Show green success message
+      const successMessage = document.createElement('div');
+      successMessage.className = 'fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded shadow-lg z-50';
+      successMessage.innerHTML = `
+        <div class="flex items-center">
+          <i class="ri-checkbox-circle-line mr-2 text-xl"></i>
+          <span>Quote request submitted successfully! We'll contact you soon.</span>
+        </div>
+      `;
+      document.body.appendChild(successMessage);
+      setTimeout(() => {
+        successMessage.remove();
+      }, 5000);
+
+      closeModalHandler();
+    })
+    .catch(() => {
+      alert('Failed to submit quote. Please try again later.');
+    });
+  });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const contactForm = document.querySelector('#contact form');
+  if (!contactForm) return;
+
+  contactForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // Optionally, collect form data here if you want to send it to your backend
+
+    // Show a success message
+    const successMessage = document.createElement('div');
+    successMessage.className = 'fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded shadow-lg z-50';
+    successMessage.innerHTML = `
+      <div class="flex items-center">
+        <i class="ri-checkbox-circle-line mr-2 text-xl"></i>
+        <span>Your message has been sent! We'll get back to you soon.</span>
+      </div>
+    `;
+    document.body.appendChild(successMessage);
+    setTimeout(() => {
+      successMessage.remove();
+    }, 5000);
+
+    contactForm.reset();
+  });
 });
 </script>
 </body>
