@@ -1097,22 +1097,33 @@ document.addEventListener('DOMContentLoaded', function () {
     window.requestAnimationFrame(step);
   }
 
-  // Intersection Observer to trigger animation
+  // Animate counters every time section is visible (on scroll up or down)
   const counters = document.querySelectorAll('.why-counter');
+  let lastScrollY = window.scrollY;
   let animated = false;
+
   if (counters.length) {
-    const observer = new IntersectionObserver((entries, obs) => {
+    const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        if (entry.isIntersecting && !animated) {
-          animated = true;
+        if (entry.isIntersecting) {
+          // Animate only if not already animating
+          if (!animated) {
+            animated = true;
+            counters.forEach(counter => {
+              const target = parseInt(counter.dataset.target, 10);
+              animateCounter(counter, target);
+            });
+          }
+        } else {
+          // Reset so it can animate again when re-entered
+          animated = false;
           counters.forEach(counter => {
-            const target = parseInt(counter.dataset.target, 10);
-            animateCounter(counter, target);
+            counter.textContent = '0';
           });
-          obs.disconnect();
         }
       });
     }, { threshold: 0.3 });
+
     counters.forEach(counter => observer.observe(counter));
   }
 });
